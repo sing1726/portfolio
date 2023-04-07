@@ -1,0 +1,58 @@
+:root
+{
+    --cf-blue-color:#81B29A;
+    --cf-dark-color:#403D39;
+}
+body{
+    overflow-x: hidden !important;
+    background: #fefae0;
+}
+
+.bg-info{
+    background-color: var(--cf-blue-color) !important;
+}
+.bg-dark{
+    background-color: var(--cf-dark-color) !important;
+}
+
+#navbar-toggle{
+    display: none;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+@media only screen and (max-width: 600px) {
+    #long-navbar, #navbar-big{
+        display: none !important;
+        
+    }
+    #navbar-toggle{
+        display: block;
+    }
+    .w-75{
+        width: 100% !important;
+    }
+    .w-50{
+        width: 75% !important;
+    }
+    .w-25{
+        width: 50% !important;
+    }
+    #team .mx-5{
+        margin: 0 !important;
+    }
+}
